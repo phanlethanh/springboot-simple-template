@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.thanhpl.simple.api.model.Bike;
 
-@Repository("bikeRepository")
+@Repository
 public interface BikeRepository extends JpaRepository<Bike, String> {
 
 	@Query(value = "SELECT * FROM public.bike \r\n" + 

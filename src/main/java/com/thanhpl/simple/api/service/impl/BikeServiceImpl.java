@@ -7,7 +7,7 @@ import com.thanhpl.simple.api.model.Bike;
 import com.thanhpl.simple.api.repository.BikeRepository;
 import com.thanhpl.simple.api.service.BikeService;
 
-@Service("bikeService")
+@Service
 public class BikeServiceImpl implements BikeService {
 
 	@Autowired

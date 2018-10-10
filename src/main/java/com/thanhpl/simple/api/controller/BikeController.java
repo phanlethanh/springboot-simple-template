@@ -34,7 +34,7 @@ public class BikeController {
 		SaveBikeResponseData data = new SaveBikeResponseData();
 		
 		Bike bike = new Bike();
-		bike.setId("1");
+		bike.setBikeId("1");
 		bike.setName(request.getName());
 		bike.setColor(request.getColor());
 		bike.setModel(request.getModel());
@@ -42,7 +42,7 @@ public class BikeController {
 		try {
 			bike = bikeService.save(bike);
 			if (bike != null) {
-				data.setId(bike.getId());
+				data.setId(bike.getBikeId());
 				response.setData(data);
 				response.setSuccess(true);
 				response.setCode("0");

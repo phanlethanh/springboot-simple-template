@@ -20,7 +20,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="user_bike", schema = "public")
+@Table(name="m_user_bike", schema = "public")
 public class UserBike {
 	
 	@EmbeddedId

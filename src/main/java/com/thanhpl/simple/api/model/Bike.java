@@ -18,11 +18,11 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="bike", schema = "public")
+@Table(name="m_bike", schema = "public")
 public class Bike {
 	
 	@Id
-	private String id;
+	private String bikeId;
 	private String name;
 	private String color;
 	private String model;
